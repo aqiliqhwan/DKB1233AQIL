@@ -4,15 +4,42 @@
   <meta charset="UTF-8">
    <title> LAMAN INFORMASI DI SABAH </title>
   <style>
-	h1 , h2 , a {
+	h1 , h3 , p , a {
 	font-family: Verdana, sans-serif;
 	}
 	
-	h2 {
-	font-weight:normal;
+	p {
+	font-weight: normal;
 	font-size: 18px;
 	} 
 	
+	.video-container {
+    display: flex;
+    justify-content: center;
+	align-items: stretch;
+    gap: 15px; /* jarak antara video */
+	padding : 10px ;
+    flex-wrap: wrap; /* bagi responsif kalau skrin kecil */
+    }
+
+	.video-box {
+    width: 48%; /* boleh ubah ikut kesesuaian */
+    background: white;
+    border: 1.5px solid black; /* nipis, warna hitam */
+    border-radius: 6px; /* sedikit lengkung je */
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+	}
+
+	video {
+    width: 100%;
+    height: 360px;
+	object-fit: cover;
+    border: 1px solid black;
+    border-radius: 4px; /* sikit je lengkung */
+	}
+  
 	.menu-box {
 	color: white;
 	margin: 0 50px;
@@ -20,7 +47,7 @@
 	padding: 12px 12px;
 	display: inline-block;
 	transition: all 0.3s ease; /* smooth effect */
-	border-radius: 5px;       
+	border-radius: 5px;
 	box-sizing: border-box;
 	}
 	
@@ -29,7 +56,7 @@
 	transform: translateY(-5px) scale(1.05); /* terapung sikit + zoom */
 	box-shadow: 0 8px 15px rgba(0,0,0,0.3); 
 	}
-  </style>
+   </style>
  </head>
 <body>
  <banner>
@@ -43,25 +70,57 @@
     <a href="sumber rujukan.html" class="menu-box">SUMBER RUJUKAN</a>
   </nav>
 	<center>
-	 <h1> LAMAN UTAMA </h1>
+	 <h1> TEMPAT MENARIK </h1>
 	</center>
-	<h2 style="margin-left:50px; margin-right:50px; text-align:justify line-height :1.5;">
-		Tujuan laman web informasi Sabah ialah untuk memberi maklumat tentang tempat menarik seperti Gunung Kinabalu,
-		Taman Laut Tunku Abdul Rahman, Kundasang dan Pulau Semporna.
-		Laman ini membantu pelancong merancang lawatan, mempromosikan keindahan Sabah
-		serta menjadi sumber rujukan rasmi lengkap dengan peta dan maklumat lokasi.
-	</h2>
-		<br></br>
-		<br></br>
-		<br></br>
-		<center>
-	 <audio autoplay loop muted controls>
-	  <source id="lagu" src="kinabalu.mp3" type="audio/mpeg">	
-	 </audio>
-		</center>
-   <br></br>
-   <br></br>
-   <br></br>
-   <br></br>
+	 <div class="video-container">
+	  <div class="video-box">
+			<h3> Gunung Kinabalu </h3>
+		<video loop controls>
+		 <source src="Gunung Kinabalu.mp4" type="video/mp4">
+		</video> 
+		 <p style="text-align: justify; line-height :1.5;"> 
+			Gunung Kinabalu merupakan sebuah gunung yang tertinggi di Pulau Borneo dan Malaysia. Gunung yang terletak di 
+			Kundasang, Sabah ini mempunyai ketinggian mencecah 4,095 meter dari paras laut.
+			Terdapat lebih 5,000 spesies flora dan fauna yang hidup dan tumbuh di sekitar Gunung Kinabalu.
+		 </p>
+	  </div>
+	   <div class="video-box">
+			<h3> Taman Laut Tunku Abdul Rahman </h3>
+		<video loop controls>
+		 <source src="Taman TAR.mp4" type="video/mp4">
+		</video>
+		 <p style="text-align: justify; line-height :1.5;"> 
+			Taman Negara Tunku Abdul Rahman merupakan kawasan perlindungan hidupan liar yang telah disytiharkan oleh kerajaan Malaysia.
+			Ia meliputi lima buah pulau iaitu Pulau Gaya, Pulau Manukan, Pulau Mamutik, Pulau Sapi dan Pulau Sulug dengan keluasan keseluruhan 4,929 hektar.
+			Perjalanan untuk ke pulau-pulau tersebut harus menaiki bot di Jesselton Point.	
+		 </p>
+	   </div>
+		<div class="video-box">
+			<h3> Kundasang </h3>
+		<video loop controls>
+		 <source src="Kundasang.mp4" type="video/mp4">
+		</video>
+		 <p style="text-align: justify; line-height :1.5;"> 
+			Kundasang atau dikenali dengan Pekan Kundasang merupakan aebuah pekan kecil yang paling hampir dengan Gunung Kinabalu.
+			Pekan ini terkenal dengan aktiviti pertanian yang menjadi sumber pendapatan penduduk tempatan.
+			Ia sinonim dengan penanaman sayur-sayuran dan buah-buahan seperti kobis dan strawberi yang sentiasa menjadi tarikan pelancong.
+		 </p>
+		</div>
+		 <div class="video-box">
+			<h3> Pulau Semporna </h3>
+		<video loop controls>
+		 <source src="Pulau Semporna.mp4" type="video/mp4">
+		</video>
+		 <p style="text-align: justify; line-height :1.5;"> 
+			Pulau Semporna yang terletak di daerah Semporna, Tawau  merupakan gabungan beberapa pulau terkenal seperti
+			Pulau Sipadan, Pulau Mabul dan Pulau Kapalai. Pelbagai aktiviti laut seperti "Scuba diving" dan "Snorkeling" yang menarik dan
+			popular di pulau ini. Ekosistemnya juga unik dan menarik.
+		 </p>
+		 </div>
+	 </div>
+	<br></br>
+	<br></br>
+	<br></br>
+	<br></br>
 </body>
 </html>
